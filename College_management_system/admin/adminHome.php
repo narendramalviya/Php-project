@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<!-- 
-//<?php
-//    session_start();
-       
-// $adminUser = $_POST['adminusername'];
-// $adminPass = $_POST['adminpass'];
-// if(!isset($_SESSION['adminlog'])|| $_SESSION['adminlog'] != true){
-//      if ( $adminUser == "admin" && $adminPass == "0000") {
-//                $_SESSION['adminlog'] = true; 
-// }
-// else{
-//     header("Location:errorPage.php"); die();
-// } 
-//     }
-//?> -->
 
+
+<?php
+  session_start(); 
+
+  if(isset($_SESSION['adminlog']) && $_SESSION['adminlog'] == true )
+            header("Location:adminHome.php");
+
+// <!-- here validate user name and password -->
+  require 'adminValidation.php'; 
+  
+  if(!isset($_SESSION['adminlog']) || $_SESSION['adminlog'] != true )
+            header("Location:errorPage.php");
+
+ ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

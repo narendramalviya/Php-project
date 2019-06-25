@@ -69,12 +69,19 @@ if (!mysqli_select_db($connection, "adminDb"))
 
 //Create Table inside the adminDb
 $sql = "CREATE TABLE admin (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    FirstName VARCHAR(30) NOT NULL,
-    LastName VARCHAR(30) NOT NULL,  
-    Email VARCHAR(30) NOT NULL,
-    MobileNumber BIGINT NOT NULL       
- )";
+     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+     FirstName VARCHAR(30) NOT NULL,
+     LastName VARCHAR(30) NOT NULL, 
+     Date_Of_Birth VARCHAR(30) NOT NULL,
+     Gender VARCHAR(6) NOT NULL,
+     Address VARCHAR(100) NOT NULL,
+     City VARCHAR(20) NOT NULL,
+     Class VARCHAR(6) NOT NULL,
+     Email VARCHAR(30) NOT NULL,
+     MobileNumber BIGINT NOT NULL,  
+     UserName VARCHAR(30) NOT NULL,
+     Password VARCHAR(30) NOT NULL   
+  )";
 
 if ($connection->query($sql)) {
      echo "Admin Table successfully created ";

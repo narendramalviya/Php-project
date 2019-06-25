@@ -12,7 +12,7 @@ $dbname = "studentDb";
   if($connection->connect_error){
       die("Connection failed: ".$connection->connect_error);
   }
-  echo "Connected successfully";
+  
 
 //ECHO STUDENT DATA
 
@@ -21,7 +21,7 @@ $dbname = "studentDb";
    $list = $connection->query($sql);
 
    if($list->num_rows > 0){
-   echo "FirstName LastName Date_Of_Birth Gender Address City Class Email MobileNumber UserName Password <br>";
+      echo "LIST OF ALL STUDENTS <br><br>";
              while($row = $list->fetch_assoc()){
 
             echo 'ID : '.$row['id'] .' '.
@@ -34,7 +34,8 @@ $dbname = "studentDb";
             'Class : '.$row['Class'] .', '.
             'Email : '.$row['Email'] .', '.
             'MobileNumber : '.$row['MobileNumber'] .', '.
-            'UserName : '.$row['Password'].'<br>';
+            'UserName : '.$row['UserName'].', '.
+            'Password : '.$row['Password'].'<br><br>';
 
 
              }
@@ -48,6 +49,6 @@ $dbname = "studentDb";
   $connection->close();
   
 ?>
-br
+
 
 

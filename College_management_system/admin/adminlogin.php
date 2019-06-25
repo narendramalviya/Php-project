@@ -1,15 +1,10 @@
-//<? php
-  //  session_start();
+<? php
+   session_start();
       
-  //     if(isset($_SESSION['adminlog'])&& $_SESSION['adminlog'] == true){
-  //            header("Location:adminHome.php");die();
-  //     }
-      // if(!isset($_SESSION['adminlog'])&& $_SESSION['adminlog'] != true){
-      //   if ($_POST['adminusername']&&$_POST['adminpass']) {
-      //     # code...
-      //   }
-      // }
-//?>
+      if(isset($_SESSION['adminlog']) && $_SESSION['adminlog'] == true){
+             header("Location:adminHome.php");die();
+      }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +23,7 @@
             UserName: <br><input type="text" name="adminusername" id=""><br>
             Password: <br><input type="password" name="adminpass" id=""><br>
             <input type="submit" value="Log in"> <br>
-            <a href="register.php"> Click to Register</a>
+            <a href="adminRegis.php"> Click to Register</a>
 
         </form>
     </div>
