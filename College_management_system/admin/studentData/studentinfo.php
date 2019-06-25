@@ -12,6 +12,8 @@
         <li> <a href="Register_new_student.php">Register New Student</a> <br> </li>
 
 </h1>
-      
+     <h3><br>
+         <a href="http://localhost/PhpPractice/College_management_system/admin/adminHome.php">Go to Admin Home</a>
+         <h3> 
 </body>
 </html>

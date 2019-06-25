@@ -23,10 +23,12 @@
     <title>admin Home</title>
 </head>
 <body>
-
-     <h1><a href="admininfo.php">Admin Data</a> <br>
-     <a href="http://localhost/PhpPractice/College_management_system/admin/studentData/studentinfo.php">Student Data</a></h1> 
-    <br>
-      <a href="createDatabase.php">Click to create Database</a>
+      <h1 align="center"> Admin Home</h1> <br>
+     <h3><a href="admininfo.php">Admin Data</a> <br>
+     <a href="http://localhost/PhpPractice/College_management_system/admin/studentData/studentinfo.php">Student Data</a>
+    </h3>  
+    <h3> 
+      <a href="createDatabase.php">Click to create Database</a> </h3>
+      <a href="http://localhost/PhpPractice/College_management_system/index.php">LogOut</a>
 </body>
 </html>

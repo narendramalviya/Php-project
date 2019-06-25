@@ -1,3 +1,5 @@
+<h1>User - Admin </h1> <br>
+
 <?php
 $servername = "localhost";
 $username = "nkmalviya";
@@ -43,10 +45,18 @@ if (!mysqli_select_db($connection, "studentDb"))
 $sql = "CREATE TABLE studentList (
        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
        FirstName VARCHAR(30) NOT NULL,
-       LastName VARCHAR(30) NOT NULL,  
+       LastName VARCHAR(30) NOT NULL, 
+       Date_Of_Birth VARCHAR(30) NOT NULL,
+       Gender VARCHAR(6) NOT NULL,
+       Address VARCHAR(100) NOT NULL,
+       City VARCHAR(20) NOT NULL,
+       Class VARCHAR(6) NOT NULL,
        Email VARCHAR(30) NOT NULL,
-       MobileNumber BIGINT NOT NULL        
+       MobileNumber BIGINT NOT NULL,  
+       UserName VARCHAR(30) NOT NULL,
+       Password VARCHAR(30) NOT NULL   
     )";
+
 if ($connection->query($sql)) {
      echo "Student Table successfully created ";
 } else {
@@ -73,4 +83,6 @@ if ($connection->query($sql)) {
 }
 
 $connection->close();
+
 ?>
+<a href="adminHome.php">Go to Admin Home</a>
