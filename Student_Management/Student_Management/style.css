@@ -1,0 +1,27 @@
+body {
+  
+    background-image: url("college-composition-desk-419635.jpg");   /* The image used */
+      background-color: #487EB0; /* Used if the image is unavailable */
+      height: 500px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      color: black;
+     }
+  
+  div {
+      background-color: rgb(174, 208, 219);
+      width: 800px;
+      margin-top: 10%;
+      margin-left: 20%;
+      border-radius: 20px;
+    }
+    input{
+      border-radius: 5px; 
+      border-color: black;
+      border-width: 1px;
+    }
+    
+  
+     
+     
